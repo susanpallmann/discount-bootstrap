@@ -8,6 +8,10 @@ $(document).ready(function(){
     var allAccordionContent = accordionBlock.children('.accordion-content');
     var allAccordionArrow = accordionBlock.children('i.accordion-arrow');
     
+    console.log(accordionLi);
+    console.log(accordionUl);
+    console.log(accordionBlock);
+    
     allAccordionContent.each(function( index ) {
       $(this).attr('aria-checked','true');
       $(this).addClass('collapsed');
