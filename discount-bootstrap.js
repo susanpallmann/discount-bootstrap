@@ -5,16 +5,10 @@ $(document).ready(function(){
     var accordionLi = accordionSegment.parent();
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
-    var allAccordionContent = accordionBlock.find('.accordion-content');
-    var allAccordionArrow = accordionBlock.find('i.accordion-arrow');
-    
-    allAccordionContent.each(function( index ) {
-      $(this).attr('aria-checked','true');
-      $(this).addClass('collapsed');
-    });
-    allAccordionContent.each(function( index ) {
-      $(this).html("expand_more");
-    });
+
+    accordionBlock.find('.accordion-content').attr('aria-checked','true');
+    accordionBlock.find('.accordion-content').addClass('collapsed');
+    accordionBlock.find('i.accordion-arrow').html("expand_more");
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
