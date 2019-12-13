@@ -9,6 +9,7 @@ $(document).ready(function(){
     accordionBlock.find('.accordion-content').attr('aria-checked','true');
     accordionBlock.find('.accordion-content').addClass('collapsed');
     accordionBlock.find('i.accordion-arrow').html("expand_more");
+    accordionBlock.find('.accordion-content').slideToggle( "fast" );
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
