@@ -11,7 +11,7 @@ $(document).ready(function(){
     console.log(accordionLi);
     console.log(accordionUl);
     console.log(accordionBlock);
-    console.log(accordionBlock.children('ul'));
+    console.log(accordionBlock.children('ul').children('li'));
     
     allAccordionContent.each(function( index ) {
       $(this).attr('aria-checked','true');
