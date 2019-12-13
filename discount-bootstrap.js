@@ -7,13 +7,13 @@ $(document).ready(function(){
     var accordionBlock = accordionUl.parent();
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
-    accordionBlock.children('.accordion-content').attr('aria-checked','true');
-    accordionBlock.children('i.accordion-arrow').html("expand_more");
-    accordionBlock.children('.accordion-content').addClass('collapsed');
     
     //If it's already checked
     if (accordionSegment.attr('aria-checked') === 'true') {
       //Uncheck it, update the icon
+      accordionBlock.children('.accordion-content').attr('aria-checked','true');
+    accordionBlock.children('i.accordion-arrow').html("expand_more");
+    accordionBlock.children('.accordion-content').addClass('collapsed');
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.accordion-arrow').html("expand_less");
       accordionLi.children('.accordion-content').removeClass('collapsed');      
