@@ -1,3 +1,7 @@
 body {
   font-family: 'open sans', sans;
 }
+.accordion p {
+  font-size: 0.9em;
+  opacity: 0.5;
+}
