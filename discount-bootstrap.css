@@ -116,40 +116,54 @@
 /* Major Breakpoint || Desktop & Up */
 @media only screen and (min-width: 1024px) {
   .column {
-    padding: 0;
+    padding-right: 1em;
+  }
+  .column:nth-last-child(n+1) {
+    padding-right: 0;
   }
   .column.span1 {
     width: 8.33%;
+    padding-right: 1em;
   }
   .column.span2 {
     width: 16.66%;
+    padding-right: 1em;
   }
   .column.span3 {
     width: 25%;
+    padding-right: 1em;
   }
   .column.span4 {
-    width: 33.33%
+    width: 33.33%;
+    padding-right: 1em;
   }
   .column.span5 {
-    width: 41.66%
+    width: 41.66%;
+    padding-right: 1em;
   }
   .column.span6 {
     width: 50%;
+    padding-right: 1em;
   }
   .column.span7 {
     width: 58.34%;
+    padding-right: 1em;
   }
   .column.span8 {
     width: 66.67%;
+    padding-right: 1em;
   }
   .column.span9 {
     width: 75%;
+    padding-right: 1em;
   }
   .column.span10 {
     width: 83.34%;
+    padding-right: 1em;
   }
   .column.span11 {
     width: 91.67%;
+    padding-right: 1em;
   }
   .column.span12 {
     width: 100%;
