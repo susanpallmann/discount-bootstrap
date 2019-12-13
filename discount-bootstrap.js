@@ -12,9 +12,6 @@ $(document).ready(function(){
       console.log("this worked! One of the children of this accordion is checked");
     }
     
-    if ($('div[data-role*="page"]').has("div[data-role=header]").size() > 0)
-    alert("Has header");
-    
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
     //If it's already checked
