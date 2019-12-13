@@ -5,13 +5,8 @@ $(document).ready(function(){
     var accordionLi = accordionSegment.parent();
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
-    var allAccordionContent = accordionBlock.children('.accordion-content');
-    var allAccordionArrow = accordionBlock.children('i.accordion-arrow');
-    
-    console.log(accordionLi);
-    console.log(accordionUl);
-    console.log(accordionBlock);
-    console.log(accordionBlock.children('ul').children('li'));
+    var allAccordionContent = accordionBlock.find('.accordion-content');
+    var allAccordionArrow = accordionBlock.find('i.accordion-arrow');
     
     allAccordionContent.each(function( index ) {
       $(this).attr('aria-checked','true');
