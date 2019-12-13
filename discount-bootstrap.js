@@ -7,7 +7,7 @@ $(document).ready(function(){
     var accordionBlock = accordionUl.parent();
     
     if (accordionBlock.children('div.accordion-head[aria-checked=false]').length > 0) {
-      console.log("this worked! One of the children of this accordion is not checked");
+      console.log("this worked! One of the children of this accordion is not checked" + accordionBlock.children('div.accordion-head[aria-checked=false]').length);
     } else {
       console.log("this worked! One of the children of this accordion is checked");
     }
