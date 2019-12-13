@@ -140,3 +140,35 @@ main .row:nth-last-child(1) {
     margin-right: 0px;
   }
 }
+/* Accordion */
+.accordion ul li {
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+.accordion ul {
+  border-top: 2px solid rgba(0,0,0,0.25);
+}
+.accordion {
+}
+.accordion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+}
+.accordion p {
+  font-size: 0.9em;
+  opacity: 0.5;
+}
+.accordion .accordion-head {
+  cursor: pointer;
+}
+.accordion-content {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear
+}
