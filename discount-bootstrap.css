@@ -34,40 +34,40 @@
 }
 /* Major Breakpoint || Mobile */
 @media only screen and (min-width: 321px) {
-  .column.span1-sm {
+  .column.span1.sm {
     width: 8.33%;
   }
-  .column.span2-sm {
+  .column.span2.sm {
     width: 16.66%;
   }
-  .column.span3-sm {
+  .column.span3.sm {
     width: 25%;
   }
-  .column.span4-sm {
+  .column.span4.sm {
     width: 33.33%
   }
-  .column.span5-sm {
+  .column.span5.sm {
     width: 41.66%
   }
-  .column.span6-sm {
+  .column.span6.sm {
     width: 50%;
   }
-  .column.span7-sm {
+  .column.span7.sm {
     width: 58.34%;
   }
-  .column.span8-sm {
+  .column.span8.sm {
     width: 66.67%;
   }
-  .column.span9-sm {
+  .column.span9.sm {
     width: 75%;
   }
-  .column.span10-sm {
+  .column.span10.sm {
     width: 83.34%;
   }
-  .column.span11-sm {
+  .column.span11.sm {
     width: 91.67%;
   }
-  .column.span12-sm {
+  .column.span12.sm {
     width: 100%;
   }
 }
@@ -76,40 +76,40 @@
 }
 /* Major Breakpoint || Tablets & Small Desktops */
 @media only screen and (min-width: 721px) {
-  .column.span1-md {
+  .column.span1.md {
     width: 8.33%;
   }
-  .column.span2-md {
+  .column.span2.md {
     width: 16.66%;
   }
-  .column.span3-md {
+  .column.span3.md {
     width: 25%;
   }
-  .column.span4-md {
+  .column.span4.md {
     width: 33.33%
   }
-  .column.span5-md {
+  .column.span5.md {
     width: 41.66%
   }
-  .column.span6-md {
+  .column.span6.md {
     width: 50%;
   }
-  .column.span7-md {
+  .column.span7.md {
     width: 58.34%;
   }
-  .column.span8-md {
+  .column.span8.md {
     width: 66.67%;
   }
-  .column.span9-md {
+  .column.span9.md {
     width: 75%;
   }
-  .column.span10-md {
+  .column.span10.md {
     width: 83.34%;
   }
-  .column.span11-md {
+  .column.span11.md {
     width: 91.67%;
   }
-  .column.span12-md {
+  .column.span12.md {
     width: 100%;
   }
 }
@@ -117,9 +117,6 @@
 @media only screen and (min-width: 1024px) {
   .column {
     padding: 0 1em 0 0;
-  }
-  .column:nth-last-child(n+1) {
-    padding: 0 0 0 0;
   }
   .column.span1 {
     width: 8.33%;
