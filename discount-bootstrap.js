@@ -6,9 +6,9 @@ $(document).ready(function(){
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
     
-    accordionUl.children('.accordion-content').attr('aria-checked','true');
-    accordionUl.children('i.accordion-arrow').html("expand_more");
-    accordionUl.children('.accordion-content').addClass('collapsed');
+    accordionLi.children('.accordion-content').attr('aria-checked','true');
+    accordionLi.children('i.accordion-arrow').html("expand_more");
+    accordionLi.children('.accordion-content').addClass('collapsed');
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
