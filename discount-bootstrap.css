@@ -180,6 +180,6 @@ main .row:nth-last-child(1) {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear
 }
-.panel i.material-icons.accordion-arrow {
+i.material-icons.accordion-arrow {
   float: right;
 }
