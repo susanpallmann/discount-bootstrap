@@ -154,7 +154,7 @@
   }
 }
 /* Padding Spacing */
-/* Desktop media queries is scaled down slightly (16px) to account for padding */
+/* Note that desktop media queries is scaled up slightly (32px) to account for padding */
 .column {
   padding: 0 1em 0 1em;
 }
@@ -186,7 +186,7 @@
     padding: 0 1em 0 1em;
   }
 }
-@media only screen and (min-width: 1008px) {
+@media only screen and (min-width: 1056px) {
   .column {
     padding: 0 0.5em 0 0.5em;
   }
