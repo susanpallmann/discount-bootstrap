@@ -6,7 +6,7 @@ $(document).ready(function(){
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
     
-    if ( accordionBlock.children('div.accordion-head[aria-checked="false"]').length != 0 ) {
+    if ( accordionBlock.children('div.accordion-head[aria-checked="false"]').length > 0 ) {
       console.log("this worked! One of the children of this accordion is not checked");
     } else {
       console.log("this worked! One of the children of this accordion is checked");
