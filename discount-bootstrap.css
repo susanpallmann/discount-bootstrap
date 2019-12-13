@@ -164,12 +164,30 @@ main .row:nth-last-child(1) {
 }
 .accordion ul li {
 }
+.accordion-head p, 
+.accordion-head h1, 
+.accordion-head h2, 
+.accordion-head h3, 
+.accordion-head h4, 
+.accordion-head h5, 
+.accordion-head h6, 
+.accordion-content p, 
+.accordion-content h1, 
+.accordion-content h2, 
+.accordion-content h3, 
+.accordion-content h4, 
+.accordion-content h5, 
+.accordion-content h6 {
+  margin: 0;
+  display: inline-block;
+}
 .accordion p {
   font-size: 0.9em;
   opacity: 0.5;
 }
-.accordion .accordion-head {
+.accordion-head {
   cursor: pointer;
+  padding: 1em 0px 1em 0px;
 }
 .accordion-content {
   opacity: 1;
@@ -178,7 +196,8 @@ main .row:nth-last-child(1) {
   transition-timing-function: linear;
   -webkit-transition-property: opacity;
   -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear
+  -webkit-transition-timing-function: linear;
+  padding-bottom: 1em;
 }
 i.material-icons.accordion-arrow {
   float: right;
