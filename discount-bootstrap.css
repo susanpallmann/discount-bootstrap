@@ -1,3 +1,11 @@
+/*Functionality Styles*/
+.collapsed {
+  opacity: 0 !important;
+}
+.script-display-none {
+  display: none;
+}
+
 /*'Discount Bootstrap' Responsive Grid (Mobile First)*/
 .container {
   max-width: 1000px;
