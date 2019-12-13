@@ -11,6 +11,8 @@ $(document).ready(function(){
     accordionBlock.find('i.accordion-arrow').html("expand_more");
     accordionBlock.find('.accordion-content').slideToggle( "fast" );
     
+    console.log(accordionBlock.find('.accordion-content[aria-checked=false]'));
+    
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
     //If it's already checked
