@@ -6,13 +6,10 @@ $(document).ready(function(){
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
     
-    if ( accordionBlock.children('.accordion-head[aria-checked="false"]').length ) {
-      console.log("this worked! One of the children of this accordion is not checked");
-    } else {
-      console.log("this worked! One of the children of this accordion is checked");
-    }
-    
     accordionLi.children('.accordion-content').removeClass('script-display-none');
+    accordionBlock.children('.accordion-content').attr('aria-checked','true');
+    accordionBlock.children('i.accordion-arrow').html("expand_more");
+    accordionBlock.children('.accordion-content').addClass('collapsed');
     
     //If it's already checked
     if (accordionSegment.attr('aria-checked') === 'true') {
