@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.accordion-head').click(function () {
     var accordionSegment = $(this);
-    var accordionLi = accordionSegment.parents(li);
-    var accordion = accordionSegment.parents(.accordion);
+    var accordionLi = accordionSegment.parents('li');
+    var accordion = accordionSegment.parents('.accordion');
     var checkedSegments = accordion.find('div[aria-checked=false]');
     var checkedLi = checkedSegments.parent();
     accordionLi.children('.accordion-content').removeClass('script-display-none');   
