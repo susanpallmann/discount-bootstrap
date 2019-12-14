@@ -13,7 +13,6 @@ $(document).ready(function(){
       accordionBlock.find('.accordion-content').addClass('collapsed');
       accordionBlock.find('i.accordion-arrow').html("expand_more");
       checkedLi.children('.accordion-content').slideToggle( "fast" );
-      accordionLi.children('.accordion-content').slideToggle( "fast" );
     }
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
@@ -23,16 +22,16 @@ $(document).ready(function(){
       //Uncheck it, update the icon
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.accordion-arrow').html("expand_less");
-      accordionLi.children('.accordion-content').removeClass('collapsed');      
+      accordionLi.children('.accordion-content').removeClass('collapsed');   
+      accordionLi.children('.accordion-content').slideToggle( "fast" );
     } else {
       
       //If not, check it, update the icon
       accordionSegment.attr('aria-checked','true');
       accordionSegment.children('i.accordion-arrow').html("expand_more");
       accordionLi.children('.accordion-content').addClass('collapsed');
-      
+      accordionLi.children('.accordion-content').slideToggle( "fast" );
     }
     //jQuery default slideToggle effect
-    accordionLi.children('.accordion-content').slideToggle( "fast" );
   });
 });
