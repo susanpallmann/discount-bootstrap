@@ -19,7 +19,7 @@ $(document).ready(function(){
         accordionSegment.attr('aria-checked','false');
         accordionSegment.children('i.accordion-arrow').html("expand_less");
         accordionLi.children('.accordion-content').removeClass('collapsed'); 
-        //accordionLi.children('.accordion-content').slideToggle( "fast" );
+        accordionLi.children('.accordion-content').slideToggle( "fast" );
       } else {
         accordionSegment.attr('aria-checked','true');
         accordionSegment.children('i.accordion-arrow').html("expand_more");
