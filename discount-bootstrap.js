@@ -14,7 +14,7 @@ $(document).ready(function(){
       accordionBlock.find('i.accordion-arrow').html("expand_more");
       checkedLi.children('.accordion-content').slideToggle( "fast" );
       if (accordionSegment.attr('aria-checked') === 'true') {
-        
+        accordionLi.children('.accordion-content').slideToggle( "fast" );
       } else {
         
       }
