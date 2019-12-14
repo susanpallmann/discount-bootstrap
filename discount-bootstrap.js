@@ -8,6 +8,8 @@ $(document).ready(function(){
     var checkedSegments = accordionBlock.find('div[aria-checked=false]');
     var checkedLi = checkedSegments.parent();
 
+    accordionLi.children('.accordion-content').removeClass('script-display-none');
+    
     if (accordionBlock.hasClass("multi-select")) {
       accordionBlock.find('.accordion-head').attr('aria-checked','true');
       accordionBlock.find('.accordion-content').addClass('collapsed');
@@ -19,8 +21,7 @@ $(document).ready(function(){
         
       }
     } else {
-      accordionLi.children('.accordion-content').removeClass('script-display-none');
-    
+      
       //If it's already checked
       if (accordionSegment.attr('aria-checked') === 'true') {
         //Uncheck it, update the icon
