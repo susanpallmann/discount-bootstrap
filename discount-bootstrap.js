@@ -5,12 +5,13 @@ $(document).ready(function(){
     var accordionLi = accordionSegment.parent();
     var accordionUl = accordionLi.parent();
     var accordionBlock = accordionUl.parent();
+    var checkedSegments = accordionBlock.find('div[aria-checked=false]');
+    var checkedLi = checkedSegments.parent();
 
     accordionBlock.find('.accordion-content').attr('aria-checked','true');
     accordionBlock.find('.accordion-content').addClass('collapsed');
     accordionBlock.find('i.accordion-arrow').html("expand_more");
-    
-    console.log(accordionBlock.find('div[aria-checked=false]'));
+    checkedLi.children('.accordion-content').slideToggle( "fast" );
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
