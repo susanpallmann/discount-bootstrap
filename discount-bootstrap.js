@@ -8,10 +8,12 @@ $(document).ready(function(){
     var checkedSegments = accordionBlock.find('div[aria-checked=false]');
     var checkedLi = checkedSegments.parent();
 
-    accordionBlock.find('.accordion-head').attr('aria-checked','true');
-    accordionBlock.find('.accordion-content').addClass('collapsed');
-    accordionBlock.find('i.accordion-arrow').html("expand_more");
-    checkedLi.children('.accordion-content').slideToggle( "fast" );
+    if (accordionBlock.hasClass("multi-select")) {
+      accordionBlock.find('.accordion-head').attr('aria-checked','true');
+      accordionBlock.find('.accordion-content').addClass('collapsed');
+      accordionBlock.find('i.accordion-arrow').html("expand_more");
+      checkedLi.children('.accordion-content').slideToggle( "fast" );
+    }
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
