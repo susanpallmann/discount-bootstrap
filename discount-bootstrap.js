@@ -37,7 +37,7 @@ $(document).ready(function(){
       //checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
       $(accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true')).each(function( index ) {
         var currentSegment = $(this);
-        accordionClose(currentSegment);
+        accordionToggleClose(currentSegment);
       });
       accordionToggle();
     } else {    
