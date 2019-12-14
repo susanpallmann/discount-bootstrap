@@ -1,10 +1,9 @@
 $(document).ready(function(){
   //Accordion functionality, listens for click on head of a given segment
-  $('div.accordion-head').click(function () {
+  $('.accordion-head').click(function () {
     var accordionSegment = $(this);
-    var accordionLi = accordionSegment.parent();
-    var accordionUl = accordionLi.parent();
-    var accordionBlock = accordionUl.parent();
+    var accordionLi = accordionSegment.parents('li');
+    var accordionBlock = accordionSegment.parents('.accordion');
     var checkedSegments = accordionBlock.find('div[aria-checked=false]');
     var checkedLi = checkedSegments.parent();
     accordionLi.children('.accordion-content').removeClass('script-display-none');   
