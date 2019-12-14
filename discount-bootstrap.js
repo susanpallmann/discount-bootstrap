@@ -10,7 +10,7 @@ $(document).ready(function(){
     accordionBlock.find('.accordion-content').addClass('collapsed');
     accordionBlock.find('i.accordion-arrow').html("expand_more");
     
-    console.log(accordionBlock.find('.accordion-content[aria-checked="false"]'));
+    console.log(accordionBlock.find('div[aria-checked=false]'));
     
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
