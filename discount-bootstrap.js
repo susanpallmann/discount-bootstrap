@@ -18,25 +18,24 @@ $(document).ready(function(){
       } else {
         
       }
-    }
-    
-    accordionLi.children('.accordion-content').removeClass('script-display-none');
-    
-    //If it's already checked
-    if (accordionSegment.attr('aria-checked') === 'true') {
-      //Uncheck it, update the icon
-      accordionSegment.attr('aria-checked','false');
-      accordionSegment.children('i.accordion-arrow').html("expand_less");
-      accordionLi.children('.accordion-content').removeClass('collapsed'); 
-      accordionLi.children('.accordion-content').slideToggle( "fast" );
     } else {
+      accordionLi.children('.accordion-content').removeClass('script-display-none');
+    
+      //If it's already checked
+      if (accordionSegment.attr('aria-checked') === 'true') {
+        //Uncheck it, update the icon
+        accordionSegment.attr('aria-checked','false');
+        accordionSegment.children('i.accordion-arrow').html("expand_less");
+        accordionLi.children('.accordion-content').removeClass('collapsed'); 
+        accordionLi.children('.accordion-content').slideToggle( "fast" );
+      } else {
       
-      //If not, check it, update the icon
-      accordionSegment.attr('aria-checked','true');
-      accordionSegment.children('i.accordion-arrow').html("expand_more");
-      accordionLi.children('.accordion-content').addClass('collapsed');
-      accordionLi.children('.accordion-content').slideToggle( "fast" );
+        //If not, check it, update the icon
+        accordionSegment.attr('aria-checked','true');
+        accordionSegment.children('i.accordion-arrow').html("expand_more");
+        accordionLi.children('.accordion-content').addClass('collapsed');
+        accordionLi.children('.accordion-content').slideToggle( "fast" );
+      }
     }
-    //jQuery default slideToggle effect
   });
 });
