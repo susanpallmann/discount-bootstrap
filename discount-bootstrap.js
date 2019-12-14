@@ -16,9 +16,15 @@ $(document).ready(function(){
       accordionBlock.find('i.accordion-arrow').html("expand_more");
       checkedLi.children('.accordion-content').slideToggle( "fast" );
       if (accordionSegment.attr('aria-checked') === 'true') {
+        accordionSegment.attr('aria-checked','false');
+        accordionSegment.children('i.accordion-arrow').html("expand_less");
+        accordionLi.children('.accordion-content').removeClass('collapsed'); 
         accordionLi.children('.accordion-content').slideToggle( "fast" );
       } else {
-        
+        accordionSegment.attr('aria-checked','true');
+        accordionSegment.children('i.accordion-arrow').html("expand_more");
+        accordionLi.children('.accordion-content').addClass('collapsed');
+        accordionLi.children('.accordion-content').slideToggle( "fast" );
       }
     } else {
       
