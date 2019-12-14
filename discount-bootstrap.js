@@ -35,7 +35,7 @@ $(document).ready(function(){
       //accordion.find('.accordion-content').addClass('collapsed');
       //accordion.find('i.accordion-arrow').html("expand_more");
       //checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
-      $(accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true')).each(function( index ) {
+      accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true').each(function( index ) {
         var currentSegment = $(this);
         accordionToggleClose(currentSegment);
       });
