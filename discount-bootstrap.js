@@ -24,7 +24,7 @@ $(document).ready(function(){
         accordionSegment.attr('aria-checked','true');
         accordionSegment.children('i.accordion-arrow').html("expand_more");
         accordionLi.children('.accordion-content').addClass('collapsed');
-        accordionLi.children('.accordion-content').slideToggle( "fast" );
+        //accordionLi.children('.accordion-content').slideToggle( "fast" );
       }
     } else {
       
