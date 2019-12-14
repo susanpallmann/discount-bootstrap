@@ -9,10 +9,14 @@ $(document).ready(function(){
     accordionLi.children('.accordion-content').removeClass('script-display-none');   
     
     if (accordion.hasClass("single-select")) {
-      accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
-      accordion.find('.accordion-content').addClass('collapsed');
-      accordion.find('i.accordion-arrow').html("expand_more");
-      checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
+      //accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
+      //accordion.find('.accordion-content').addClass('collapsed');
+      //accordion.find('i.accordion-arrow').html("expand_more");
+      //checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
+      $(accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true')).each(function( index ) {
+        var currentSegment = $(this);
+        accordionClose(currentSegment);
+      });
       accordionToggle();
     } else {    
       accordionToggle();
