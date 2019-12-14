@@ -14,7 +14,7 @@ $(document).ready(function(){
       accordionBlock.find('.accordion-head').attr('aria-checked','true');
       accordionBlock.find('.accordion-content').addClass('collapsed');
       accordionBlock.find('i.accordion-arrow').html("expand_more");
-      checkedLi.children('.accordion-content').slideToggle( "fast" ).not(this);
+      checkedLi.children('.accordion-content').not(this).slideToggle( "fast" );
       if (accordionSegment.attr('aria-checked') === 'true') {
         accordionSegment.attr('aria-checked','false');
         accordionSegment.children('i.accordion-arrow').html("expand_less");
