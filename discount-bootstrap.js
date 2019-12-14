@@ -11,7 +11,7 @@ $(document).ready(function(){
     accordionLi.children('.accordion-content').removeClass('script-display-none');
     
     if (accordionBlock.hasClass("multi-select")) {
-      accordionBlock.find('.accordion-head').not(accordionLi.children('.accordion-content')).attr('aria-checked','true');
+      accordionBlock.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
       accordionBlock.find('.accordion-content').addClass('collapsed');
       accordionBlock.find('i.accordion-arrow').html("expand_more");
       checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
