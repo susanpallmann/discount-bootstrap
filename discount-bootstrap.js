@@ -11,9 +11,9 @@ $(document).ready(function(){
     function accordionToggleOpen(segment) {
       var currentSegment = segment;
       var currentLi = currentSegment.parent();
-      currentSegment.attr('aria-checked','false');
-      currentSegment.children('i.accordion-arrow').html("expand_less");
-      currentLi.children('.accordion-content').removeClass('collapsed').slideToggle( "fast" );
+      segment.attr('aria-checked','false');
+      segment.children('i.accordion-arrow').html("expand_less");
+      segment.parent('li').children('.accordion-content').removeClass('collapsed').slideToggle( "fast" );
     }
     function accordionToggleClose(segment) {
       var currentSegment = segment;
@@ -31,10 +31,6 @@ $(document).ready(function(){
     }
     
     if (accordion.hasClass("single-select")) {
-      //accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
-      //accordion.find('.accordion-content').addClass('collapsed');
-      //accordion.find('i.accordion-arrow').html("expand_more");
-      //checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
       checkedSegments.not(accordionSegment).each(function( index ) {
         var currentSegment = $(this);
         accordionToggleClose(currentSegment);
