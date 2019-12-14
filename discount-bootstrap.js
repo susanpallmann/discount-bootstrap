@@ -7,9 +7,7 @@ $(document).ready(function(){
     var accordionBlock = accordionUl.parent();
     var checkedSegments = accordionBlock.find('div[aria-checked=false]');
     var checkedLi = checkedSegments.parent();
-
-    accordionLi.children('.accordion-content').removeClass('script-display-none');
-    
+    accordionLi.children('.accordion-content').removeClass('script-display-none');   
     if (accordionBlock.hasClass("multi-select")) {
       accordionBlock.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
       accordionBlock.find('.accordion-content').addClass('collapsed');
@@ -26,8 +24,7 @@ $(document).ready(function(){
         accordionLi.children('.accordion-content').addClass('collapsed');
         accordionLi.children('.accordion-content').slideToggle( "fast" );
       }
-    } else {
-      
+    } else {    
       //If it's already checked
       if (accordionSegment.attr('aria-checked') === 'true') {
         //Uncheck it, update the icon
@@ -36,7 +33,6 @@ $(document).ready(function(){
         accordionLi.children('.accordion-content').removeClass('collapsed'); 
         accordionLi.children('.accordion-content').slideToggle( "fast" );
       } else {
-      
         //If not, check it, update the icon
         accordionSegment.attr('aria-checked','true');
         accordionSegment.children('i.accordion-arrow').html("expand_more");
