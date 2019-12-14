@@ -1,4 +1,36 @@
 $(document).ready(function(){
+  $('.accordion-head').click(function () {
+    var accordionSegment = $(this);
+    var accordionLi = accordionSegment.parents(li);
+    var accordion = accordionSegment.parents(.accordion);
+    var checkedSegments = accordion.find('div[aria-checked=false]');
+    var checkedLi = checkedSegments.parent();
+    accordionLi.children('.accordion-content').removeClass('script-display-none');   
+    if (accordion.hasClass("single-select")) {
+      accordion.find('.accordion-head').not(accordionLi.children('.accordion-head')).attr('aria-checked','true');
+      accordion.find('.accordion-content').addClass('collapsed');
+      accordion.find('i.accordion-arrow').html("expand_more");
+      checkedLi.children('.accordion-content').not(accordionLi.children('.accordion-content')).slideToggle( "fast" );
+      accordionToggle();
+    } else {    
+      accordionToggle();
+    }
+    function accordionToggle() {
+      if (accordionSegment.attr('aria-checked') === 'true') {
+        accordionSegment.attr('aria-checked','false');
+        accordionSegment.children('i.accordion-arrow').html("expand_less");
+        accordionLi.children('.accordion-content').removeClass('collapsed').slideToggle( "fast" );; 
+      } else {
+        //If not, check it, update the icon
+        accordionSegment.attr('aria-checked','true');
+        accordionSegment.children('i.accordion-arrow').html("expand_more");
+        accordionLi.children('.accordion-content').addClass('collapsed').slideToggle( "fast" );
+      }
+    }
+  });
+});
+
+/* $(document).ready(function(){
   //Accordion functionality, listens for click on head of a given segment
   $('.accordion-head').click(function () {
     var accordionSegment = $(this);
@@ -41,3 +73,4 @@ $(document).ready(function(){
     }
   });
 });
+*/
