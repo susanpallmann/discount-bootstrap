@@ -14,4 +14,21 @@ The **.container** is a centered div with a fixed max-width. Currently that widt
 .row
 ```
 The **.row** uses 'display: flex' and 'flex-wrap: wrap' so that it can contain columns with equal heights. At risk of overexplaining, each **.row** should only contain columns for *one* row (on desktop). If in doubt, all of the columns inside of a given row will have classes made up of ".span" and a number, 1-12. The span numbers should add up to 12. (i.e. **.span6** and **.span6**, or 3 **.span4** columns).
+### .column & .span12
+
+```css
+.column
+.span1
+.span2
+.span3
+.span4
+.span5
+.span6
+.span7
+.span8
+.span9
+.span10
+.span11
+.span12
+```
 ### Breakpoints: 
