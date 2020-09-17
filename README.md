@@ -37,5 +37,6 @@ The **.row** uses 'display: flex' and 'flex-wrap: wrap' so that it can contain c
 .span11
 .span12
 ```
+**.column** should always be paired with one of the **.span** classes listed above. If there is no **.span** clarified, **.span12** is more or less assumed, and the column will always be full-width. The naming convention to the spans imagines the page broken up into 12 columns. In such a case, **.span1** spans one of those 12 columns, or 1/12th of the available space. Similarly, **.span6** is half of the space available, **.span4** is 1/3rd, and so on.
 
 ### Breakpoints: 
