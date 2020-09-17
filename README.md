@@ -94,7 +94,7 @@ This class indicates the part of the accordion segment that is always visible. I
 <div class="accordion">
   <ul>
     <li>
-      <div class="accordion-head" tabindex="0" role="switch" aria-checked="true">
+      <div class="accordion-head" tabindex="0" role="switch" aria-checked="false">
         <h3>Toggle Me</h3>
         <i class="material-icons accordion-arrow">expand_more</i>
       </div>
@@ -105,7 +105,7 @@ This class indicates the part of the accordion segment that is always visible. I
   </ul>
 </div>
 ```
-**.accordion-head** must include the 'role="switch"' and 'aria-checked="false"' attributes. The script makes use of these to track current states. In addition, they provide accessibility support. It is highly recommended that a tabindex be added so that this feature can be used without a mouse.
+**.accordion-head** must include the 'role="switch"' and 'aria-checked="false"' attributes. The script makes use of these to track current states. In addition, they provide accessibility support. It is highly recommended that a tabindex be added so that this feature can be used without a mouse. aria-checked="true" corresponds to a segment being opened, while aria-checked="false" indicates that a segment is closed. As such, most accordions should be initially programmed to have aria-checked set to "false".
 
 The **.accordion-head** should contain some sort of text to indicate the function, and should contain an icon (i) with the class **.accordion-arrow**. This example uses Google's Material Icons, which the script was built to utilize. However, the exclusion of the icon element altogether does not appear to break anything should you prefer not to use Google's icons.
 
