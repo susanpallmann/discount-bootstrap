@@ -39,7 +39,7 @@ The **.row** uses 'display: flex' and 'flex-wrap: wrap' so that it can contain c
 ```
 **.column** should always be paired with one of the **.span** classes listed above. If there is no **.span** clarified, **.span12** is more or less assumed, and the column will always be full-width. The naming convention to the spans imagines the page broken up into 12 columns. In such a case, **.span1** spans one of those 12 columns, or 1/12th of the available space. Similarly, **.span6** is half of the space available, **.span4** is 1/3rd, and so on.
 
-As indicated in the **.row** section, the **.span** numbers should add up to 12. If you find yourself with too many **.spans**, break them into separate **.rows**, like this:
+As indicated in the **.row** section, the **.span** numbers should add up to 12. If you find yourself with too many **.spans**, break them into separate **.row**s, like this:
 ```html
 <div class="container">
   <div class="row">
@@ -56,7 +56,13 @@ As indicated in the **.row** section, the **.span** numbers should add up to 12.
 ```
 
 ### .md & .sm
+```css
+.sm
+.md
+```
 These classes alter the breakpoints at which columns cease to be full-width. **.sm** causes columns to become full-width only on screens less than 320px wide. **.md** is has a more intermediate breakpoint, becoming full-width on screens less than 721px wide. If neither **.sm** or **.md** are specified, the columns will revert to full-width when screen width is less than 1024px.
+
+For best results, ensure that all **.column**s within a **.row** have the same sizing class (all **.md**, all **.sm**, or neither), and never use both **.md** and **.sm** on the same element.
 
 
 ### Breakpoints: 
