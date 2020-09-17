@@ -1,6 +1,10 @@
 # discount-bootstrap
 "Discount Bootstrap" is my lightweight take on Bootstrap's responsive grid system. It's mostly designed for personal use to make my from-scratch web projects a little faster to build. I usually just make a copy from the files here to add to new projects; this repository is to provide a "clean" backup copy.
 
+## Contents
+* [Responsive Grid System](#responsive-grid-system)
+* [Accordion](#accordion)
+
 ## Responsive Grid System
 Much like Bootstrap's responsive grid, my system uses a 12-column grid structure. The structure's success requires correct usage and hierarchy.
 
