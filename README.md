@@ -39,4 +39,19 @@ The **.row** uses 'display: flex' and 'flex-wrap: wrap' so that it can contain c
 ```
 **.column** should always be paired with one of the **.span** classes listed above. If there is no **.span** clarified, **.span12** is more or less assumed, and the column will always be full-width. The naming convention to the spans imagines the page broken up into 12 columns. In such a case, **.span1** spans one of those 12 columns, or 1/12th of the available space. Similarly, **.span6** is half of the space available, **.span4** is 1/3rd, and so on.
 
+As indicated in the **.row** section, the **.span** numbers should add up to 12. If you find yourself with too many **.spans**, break them into separate **.rows**, like this:
+```html
+<div class="container">
+  <div class="row">
+    <div class="column span12">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column span6">
+    </div>
+    <div class="column span6">
+    </div>
+  </div>
+</div>
+```
 ### Breakpoints: 
