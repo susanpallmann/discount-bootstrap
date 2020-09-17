@@ -79,7 +79,7 @@ Due to the way **.column**s are spaced, there is an extra breakpoint after Deskt
 ## Accordion
 Although originally "discount bootstrap" was just a responsive grid system, I am expanding it to add some interactive features I use frequently, such as an accordion. This feature shows a list of toggle-able headings that each reveal unique content when toggled.
 
-###.accordion
+### .accordion
 ```css
 .accordion
 ```
