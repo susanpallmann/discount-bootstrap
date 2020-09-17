@@ -54,4 +54,10 @@ As indicated in the **.row** section, the **.span** numbers should add up to 12.
   </div>
 </div>
 ```
+
+### .md & .sm
+These classes alter the breakpoints at which columns cease to be full-width. **.sm** causes columns to become full-width only on screens less than 320px wide. **.md** is has a more intermediate breakpoint, becoming full-width on screens less than 721px wide. If neither **.sm** or **.md** are specified, the columns will revert to full-width when screen width is less than 1024px.
+
+
 ### Breakpoints: 
+
