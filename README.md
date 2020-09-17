@@ -114,3 +114,9 @@ The **.accordion-head** should contain some sort of text to indicate the functio
 .accordion-content
 ```
 **.accordion-content** is the class that should contain the content you wish to sometimes hide, as the example in the previous section demonstrates.
+
+### .single-select (optional)
+```css
+.single-select
+```
+By default, accordions will allow users to open or close as many accordion segments as they choose at a time. That is, open segments will not automatically close when another is opened. However, if you would prefer that other segments are closed, you can add the **.single-select** class to the element with the **.accordion** class.
