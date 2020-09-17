@@ -69,10 +69,10 @@ This system is designed to be mobile first. Media queries are structures so that
 
 Due to the way **.column**s are spaced, there is an extra breakpoint after Desktop to prevent content inside of columns from ever touching the sides of the screen.
 
-* Very Small Screens (max 320)
-* Mobile (min 321)
-* Mobile Horizontal & Tablets (min 601)
-* Tablets & Small Desktops (min 721)
-* Desktop & Up (min 1024)
-* Desktop w/Margins (min 1056)
+* Very Small Screens (max 320px)
+* Mobile (min 321px)
+* Mobile Horizontal & Tablets (min 601px)
+* Tablets & Small Desktops (min 721px)
+* Desktop & Up (min 1024px)
+* Desktop w/Margins (min 1056px)
 
