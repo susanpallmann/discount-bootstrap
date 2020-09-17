@@ -15,7 +15,7 @@ To have the functionality documented, use the following files:
 * no-script.css
 *Note that no-script.css needs to be linked so that it is used if scripts are disallowed.*
 
-## Suggested
+### Suggested
 * Google's Material Icons (used by accordion feature)
 
 ## Responsive Grid System
