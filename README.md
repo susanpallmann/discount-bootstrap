@@ -76,3 +76,41 @@ Due to the way **.column**s are spaced, there is an extra breakpoint after Deskt
 * Desktop & Up (min 1024px)
 * Desktop w/Margins (min 1056px)
 
+## Accordion
+Although originally "discount bootstrap" was just a responsive grid system, I am expanding it to add some interactive features I use frequently, such as an accordion. This feature shows a list of toggle-able headings that each reveal unique content when toggled.
+
+###.accordion
+```css
+.accordion
+```
+This class is intended to be applied to a div containing an ordered or unordered list with list items. This provides the script with context to close other elements within the same **.accordion**, if applicable.
+
+### .accordion-head
+```css
+.accordion-head
+```
+This class indicates the part of the accordion segment that is always visible. It is the part the user clicks to toggle the hidden content. Both **.accordion-head** and **accordion-content** should be within a list item (li) element in the ordered or unordered list like so:
+```html
+<div class="accordion">
+  <ul>
+    <li>
+      <div class="accordion-head" tabindex="0" role="switch" aria-checked="true">
+        <h3>Toggle Me</h3>
+        <i class="material-icons accordion-arrow">expand_more</i>
+      </div>
+      <div class="accordion-content">
+        <p>This information is sometimes hidden and sometimes visible.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+**.accordion-head** must include the 'role="switch"' and 'aria-checked="false"' attributes. The script makes use of these to track current states. In addition, they provide accessibility support. It is highly recommended that a tabindex be added so that this feature can be used without a mouse.
+
+The **.accordion-head** should contain some sort of text to indicate the function, and should contain an icon (i) with the class **.accordion-arrow**. This example uses Google's Material Icons, which the script was built to utilize. However, the exclusion of the icon element altogether does not appear to break anything should you prefer not to use Google's icons.
+
+### .accordion-content
+```css
+.accordion-content
+```
+**.accordion-content** is the class that should contain the content you wish to sometimes hide, as the example in the previous section demonstrates.
