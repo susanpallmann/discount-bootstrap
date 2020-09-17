@@ -64,6 +64,15 @@ These classes alter the breakpoints at which columns cease to be full-width. **.
 
 For best results, ensure that all **.column**s within a **.row** have the same sizing class (all **.md**, all **.sm**, or neither), and never use both **.md** and **.sm** on the same element.
 
+### Breakpoints:
+This system is designed to be mobile first. Media queries are structures so that mobile is the default, and each successive breakpoint is a gradually larger screen. Therefore, most elements start as full-width, and then become broken into side-by-side columns when the screen is large enough.
 
-### Breakpoints: 
+Due to the way **.column**s are spaced, there is an extra breakpoint after Desktop to prevent content inside of columns from ever touching the sides of the screen.
+
+* Very Small Screens (max 320)
+* Mobile (min 321)
+* Mobile Horizontal & Tablets (min 601)
+* Tablets & Small Desktops (min 721)
+* Desktop & Up (min 1024)
+* Desktop w/Margins (min 1056)
 
