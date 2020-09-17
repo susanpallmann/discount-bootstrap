@@ -8,7 +8,7 @@ $(document).ready(function(){
     var accordionSegment = $(this);
     var accordionLi = accordionSegment.parents('li');
     var accordion = accordionSegment.parents('.accordion');
-    var checkedSegments = accordion.find('div[aria-checked=false]');
+    var checkedSegments = accordion.find('div[aria-checked=true]');
     var checkedLi = checkedSegments.parent();  
     
     // Removes the default 'display:none' as this is only there to collapse things by default on page load
@@ -19,7 +19,7 @@ $(document).ready(function(){
     // Opens a passed in segment of the accordion
     function accordionToggleOpen(segment) {
       segment
-        .attr('aria-checked','false');
+        .attr('aria-checked','true');
       segment
         .children('i.accordion-arrow')
         .html("expand_less");
@@ -32,7 +32,7 @@ $(document).ready(function(){
     
     // Closes a passed in segment of the accordion
     function accordionToggleClose(segment) {
-      segment.attr('aria-checked','true');
+      segment.attr('aria-checked','false');
       segment
         .children('i.accordion-arrow')
         .html("expand_more");
@@ -45,7 +45,7 @@ $(document).ready(function(){
     
     // Determines which of the above functions to run on the current (this) segment
     function accordionToggle() {
-      if (accordionSegment.attr('aria-checked') === 'true') {
+      if (accordionSegment.attr('aria-checked') === 'false') {
         accordionToggleOpen(accordionSegment);
       } else {
         accordionToggleClose(accordionSegment);
