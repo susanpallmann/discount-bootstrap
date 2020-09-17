@@ -2,8 +2,21 @@
 "Discount Bootstrap" is my lightweight take on Bootstrap's responsive grid system. It's mostly designed for personal use to make my from-scratch web projects a little faster to build. I usually just make a copy from the files here to add to new projects; this repository is to provide a "clean" backup copy.
 
 ## Contents
+* [Requirements](#requirements)
 * [Responsive Grid System](#responsive-grid-system)
 * [Accordion](#accordion)
+
+## Requirements
+To have the functionality documented, use the following files:
+
+### Required
+* discount-bootstrap.css
+* discount-bootstrap.js
+* no-script.css
+*Note that no-script.css needs to be linked so that it is used if scripts are disallowed.*
+
+## Suggested
+* Google's Material Icons (used by accordion feature)
 
 ## Responsive Grid System
 Much like Bootstrap's responsive grid, my system uses a 12-column grid structure. The structure's success requires correct usage and hierarchy.
